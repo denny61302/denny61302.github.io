@@ -4,7 +4,6 @@ import 'package:DeveloperFolio/configure/routing.dart';
 import 'dart:js' as js;
 import 'dart:html' as html;
 
-import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -83,13 +82,7 @@ class NavbarTbDt extends StatelessWidget {
                   SizedBox(
                     width: 10,
                   ),
-                  IconButton(
-              onPressed: () {
-                AdaptiveTheme.of(context).toggleThemeMode();
-              },
-              
-              icon: Icon(Icons.brightness_3, size: 25),
-            ),
+
                 ],
               ),
             ),
@@ -116,13 +109,7 @@ class NavbarMob extends StatelessWidget {
           Expanded(child: Container(
             width: 100,
           )),
-             IconButton(
-                alignment: Alignment.topRight,
-                      onPressed: () {
-                        AdaptiveTheme.of(context).toggleThemeMode();
-                      },
-                      icon: Icon(Icons.brightness_3, size: 25),
-                    ),
+
           IconButton(
             alignment: Alignment.topRight,
             icon: Icon(

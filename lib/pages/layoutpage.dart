@@ -1,4 +1,3 @@
-  
 import 'package:DeveloperFolio/configure/centeredview.dart';
 import 'package:DeveloperFolio/configure/navigation_service.dart';
 import 'package:DeveloperFolio/include/navbar/drawer/drawernav.dart';
@@ -16,14 +15,9 @@ class LayoutTemplate extends StatelessWidget {
       builder: (context, sizingInformation) => Scaffold(
         endDrawer: NavigationDrawer(),
         endDrawerEnableOpenDragGesture: false,
-        
         body: Column(
           children: <Widget>[
             NavigationBar(),
-
-
-
-
             Expanded(
               child: Navigator(
                 key: locator<NavigationService>().navigatorKey,
